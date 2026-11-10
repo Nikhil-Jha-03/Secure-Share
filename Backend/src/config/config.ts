@@ -1,8 +1,8 @@
-import { configDotenv } from "dotenv"
+import { configDotenv } from "dotenv";
 
 configDotenv({
-    path: './.env',
-    quiet: true
+  path: "./.env",
+  quiet: true,
 });
 
 if (!process.env.PORT) {

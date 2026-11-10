@@ -16,11 +16,12 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/",(req,res)=>{
-
+console.log("hello : ", process.env.DATABASE_URL, "NIKH")
     res.json({
-        message:"Hey",
+        message:"Hey no",
         STATUS_CODE:404
     })
 })
+
 
 app.listen(config.PORT,()=>{})
